@@ -36,10 +36,10 @@ class SuraDetailsActivity : AppCompatActivity() {
         arrowbackIc.setOnClickListener { finish() }
         arrowCircle=findViewById(R.id.arrow_circle)
         arrowCircle.setOnClickListener {
-            val position=suraPosition!! -1
+            val position=suraPosition!! +1
             val intent1= Intent( this,SuraDetailsActivity::class.java)
             intent1.putExtra("EXTRA_SURA_POSISION", position)
-            //intent1.putExtra("EXTRA_SURA_NAME", fragment.suraNameList.elementAt(position))
+           // intent1.putExtra("EXTRA_SURA_NAME", fragment.suraNameList.elementAt(position))
             startActivity(intent1)
 
         }
